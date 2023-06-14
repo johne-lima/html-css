@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/pequena.jpg" type="image/jpg">
+        <source media="(max-width: 900px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.avif" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>vamos aprender a reproduzir audios em HTML50</p>
+    <!--<audio src="midia/On The Rocks - TrackTribe.mp3" controls autoplay></audio> -->
+    <!--MP3, WAV, OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/On The Rocks - TrackTribe.mp3" type="audio/mpeg">
+        <source src="midia/On The Rocks - TrackTribe.ogg" type="audio/ogg"> <!--Exemplo ogg-->
+        <source src="midia/On The Rocks - TrackTribe.wav" type="audog/wav"> <!--Exemplo wav-->
+        <p><a href="midia/On The Rocks - TrackTribe.mp3"></a>Clique aqui para baixar o seu audio mp3 </a></p>
+    </audio>
+</body>
+</html>
