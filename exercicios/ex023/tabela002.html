@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even){ /* 2n */
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(odd){ /* 2n-1 */
+            background-color: white;
+            font-style: italic;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+        }
+
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+
+        thead{
+            position: sticky;
+            top: -1px;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD (TR, TD, TH)
+            TBODY (TR, TD, TH)
+            TFOOT (TR, TD, TH)
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">4.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis ea quasi, dolore dicta nihil. Ipsam autem ad voluptatum, quo accusantium recusandae neque dolore, omnis quos voluptatem, et iste perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur a ratione earum fugit? Porro totam, voluptatibus ipsa ab obcaecati et saepe. Maxime, obcaecati praesentium placeat architecto sunt aliquid dolore.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptate non quis fuga iure itaque provident unde impedit et fugit ipsa explicabo alias dolore reprehenderit at veritatis, tenetur, harum vel.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum quaerat natus dolores nulla est saepe, quae recusandae laboriosam ratione. Corrupti, animi. Aliquid officia tempore nihil error molestias consequuntur quae.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis ea quasi, dolore dicta nihil. Ipsam autem ad voluptatum, quo accusantium recusandae neque dolore, omnis quos voluptatem, et iste perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur a ratione earum fugit? Porro totam, voluptatibus ipsa ab obcaecati et saepe. Maxime, obcaecati praesentium placeat architecto sunt aliquid dolore.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptate non quis fuga iure itaque provident unde impedit et fugit ipsa explicabo alias dolore reprehenderit at veritatis, tenetur, harum vel.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum quaerat natus dolores nulla est saepe, quae recusandae laboriosam ratione. Corrupti, animi. Aliquid officia tempore nihil error molestias consequuntur quae.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis ea quasi, dolore dicta nihil. Ipsam autem ad voluptatum, quo accusantium recusandae neque dolore, omnis quos voluptatem, et iste perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur a ratione earum fugit? Porro totam, voluptatibus ipsa ab obcaecati et saepe. Maxime, obcaecati praesentium placeat architecto sunt aliquid dolore.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptate non quis fuga iure itaque provident unde impedit et fugit ipsa explicabo alias dolore reprehenderit at veritatis, tenetur, harum vel.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum quaerat natus dolores nulla est saepe, quae recusandae laboriosam ratione. Corrupti, animi. Aliquid officia tempore nihil error molestias consequuntur quae.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis ea quasi, dolore dicta nihil. Ipsam autem ad voluptatum, quo accusantium recusandae neque dolore, omnis quos voluptatem, et iste perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur a ratione earum fugit? Porro totam, voluptatibus ipsa ab obcaecati et saepe. Maxime, obcaecati praesentium placeat architecto sunt aliquid dolore.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptate non quis fuga iure itaque provident unde impedit et fugit ipsa explicabo alias dolore reprehenderit at veritatis, tenetur, harum vel.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum quaerat natus dolores nulla est saepe, quae recusandae laboriosam ratione. Corrupti, animi. Aliquid officia tempore nihil error molestias consequuntur quae.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis ea quasi, dolore dicta nihil. Ipsam autem ad voluptatum, quo accusantium recusandae neque dolore, omnis quos voluptatem, et iste perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur a ratione earum fugit? Porro totam, voluptatibus ipsa ab obcaecati et saepe. Maxime, obcaecati praesentium placeat architecto sunt aliquid dolore.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptate non quis fuga iure itaque provident unde impedit et fugit ipsa explicabo alias dolore reprehenderit at veritatis, tenetur, harum vel.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum quaerat natus dolores nulla est saepe, quae recusandae laboriosam ratione. Corrupti, animi. Aliquid officia tempore nihil error molestias consequuntur quae.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis ea quasi, dolore dicta nihil. Ipsam autem ad voluptatum, quo accusantium recusandae neque dolore, omnis quos voluptatem, et iste perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur a ratione earum fugit? Porro totam, voluptatibus ipsa ab obcaecati et saepe. Maxime, obcaecati praesentium placeat architecto sunt aliquid dolore.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptate non quis fuga iure itaque provident unde impedit et fugit ipsa explicabo alias dolore reprehenderit at veritatis, tenetur, harum vel.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum quaerat natus dolores nulla est saepe, quae recusandae laboriosam ratione. Corrupti, animi. Aliquid officia tempore nihil error molestias consequuntur quae.
+    </p>
+</body>
+</html>
